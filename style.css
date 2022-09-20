@@ -151,7 +151,7 @@ nav ul li:hover>ul{
     justify-content:space-between; */
 }
 .background{
-    background-image:url(images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg);
+    background-image:url("images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg");
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
@@ -262,19 +262,19 @@ nav ul li:hover>ul{
     width:30%
 } */
 .portfolio-1{
-    background:url(images/technology.jpg);
+    background:url("images/technology.jpg");
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
 }
 .portfolio-2{
-    background:url(images/farm\ and\ agriculture.jpg);
+    background:url("images/farmandagriculture.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
 }
 .portfolio-3{
-    background:url(images/food\ and\ drinks.jpg);
+    background:url("images/foodanddrinks.jpg");
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -351,7 +351,7 @@ nav ul li:hover>ul{
     color:black;
 }
 .fun-facts{
-    background:url(images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg);
+    background:url("images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg");
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
