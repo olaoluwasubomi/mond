@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="x-icon" href="images/Madros TDS Logo.png">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="main-1">
+                <img src="images/AfriMond Company NG 20220906_154510.jpg" alt="">
+                <img src="images/icon-hamburger.svg" alt="" id="bar">
+            </div>
+            <nav class="navigation" id="menu-bar">
+                <img src="images/cancel sign.png" alt="" id="dismiss">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portfolio.html" onmouseover="big(this)" onclick="small(this)" ,onmouseout="small(this)">portfolio</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="inner" id="show">
+            <li><a href="portfolio.html">technologies & digital solutions firm</a></li>
+            <li><a href="portfolio.html">farms and agriculture</a></li>
+            <li><a href="portfolio.html">foods and drinks</a></li>
+            <li><a href="portfolio.html">imports and export trade</a></li>
+            <li><a href="portfolio.html">automobiles</a></li>
+            <li><a href="portfolio.html">real estates and property development</a></li>
+            <li><a href="portfolio.html">hygiene services</a></li>
+        </div>
+    </header>
+    <div>
+        <h4 class="topic">about us</h4>
+    </div>
+    <section class="about">
+        <!-- OBJECTIVE AND IMAGE -->
+        <div class="about-1">
+            <p>AfriMond Company Nigeria Ltd. is a heptamerous company whose core focus of business engagements cover the tech and digital space, agricultural investments, import and export trades, real estate management, property development, hygiene consumer goods production, and entrepreneurial consults. Through each of these engagements, we strategically proffer solutions to clearly identified problems pertinent in the society as a way of immensely contributing to the economic wealth of the nation.</p>
+            <img src="images/istockphoto-1203642944-170667a.jpg" alt="">
+        </div>
+
+        <div class="drive">
+            <img src="images/technology.jpg" alt="">
+            <div>
+                <p>We believe strongly in the realities of the future and our ability to thrive greatly in such a country as Nigeria. We believe Nigerians and Africans generally deserve the best and easiest life in terms of asset possession and early exposure to/equipment with the right technological and digital tools needed to maximize exploits-making in present age and ages to come. The necessity to create access to these opportunities is our drive, and we are confident we can achieve this with the right strategies, programmes, and initiatives.</p>
+                <span>our drive</span>
+            </div>
+        </div>
+        <section class="mission">
+            <div class="mission-1">
+                <img src="images/mission.jpg" alt="">
+                <div>
+                    <span>our mission</span>
+                    <p>To help Africans with the multiplication of their assets and maximizing their creativity through our business strategies, programmes, innovations and initiatives.</p>
+                </div>
+            </div>
+            <div class="mission-1">
+                <img src="images/vision.jpg" alt="">
+                <div>
+                    <span>our vision</span>
+                    <p>To consistently, through each of our firm, multiply Nigerians’ (and Africans’) assets and maximize their creativity. Multiplying assets and maximizing creativity.</p>
+                </div>
+            </div>
+            <div class="mission-1">
+                <img src="images/foresight.jpg" alt="">
+                <div>
+                    <span>our foresight</span>
+                    <p>We foresee a multi-trillion dollar company with multiple facets of adventurous business and economy-driving innovations. This is our destination.</p>
+                </div>
+            </div>
+            <!-- <div class="mission-1">
+                <img src="images/technology.jpg" alt="">
+                <div>
+                    <span>our foresight</span>
+                    <p>We foresee a multi-trillion dollar company with multiple facets of adventurous business and economy-driving innovations. This is our destination. This has thence become our mission.</p>
+                </div>
+            </div> -->
+        </section>
+
+        <footer>
+            <div class="footer-text">
+                <h5>about us</h5>
+                <p>AfriMond Company Nigeria Ltd. is a heptamerous company whose core focus of business engagements cover the tech and digital space, agricultural investments, import and export trades, real estate management, property development, hygiene consumer goods production, and entrepreneurial consults.</p>
+            </div>
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="contact.html">conntact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-form">
+                <form>
+                    <p>send us a message</p>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Enter your Email"  required>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" name="" id="">
+                </form>
+            </div>
+        </footer>
+
+
+        <p class="copyright">&copy; afrimond empire <span id="date"></span></p>
+</body>
+<script>
+    function big(p){
+       document.getElementById('show').style.display = "block";
+   }
+   function small(p){
+       document.getElementById('show').style.display = "none";
+   }
+   var d = new Date().getFullYear();
+   document.getElementById('date').innerHTML = d;
+
+   var x = document.getElementById("bar");
+    var y = document.getElementById("menu-bar");
+    var z = document.getElementById("dismiss");
+
+    x.onclick = function(){
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "block";
+    }
+    z.onclick = function(){
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "none";
+    }
+</script>
+</html>

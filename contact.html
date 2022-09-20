@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="main-1">
+                <img src="images/AfriMond Company NG 20220906_154510.jpg" alt="">
+                <img src="images/icon-hamburger.svg" alt="" id="bar">
+            </div>
+            <nav class="navigation" id="menu-bar">
+                <img src="images/cancel sign.png" alt="" id="dismiss">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portfolio.html" onmouseover="big(this)" , onclick="small(this)">portfolios</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="inner" id="show">
+            <li><a href="portfolio.html">technologies & digital solutions firm</a></li>
+            <li><a href="portfolio.html">farms and agriculture</a></li>
+            <li><a href="portfolio.html">foods and drinks</a></li>
+            <li><a href="portfolio.html">imports and export trade</a></li>
+            <li><a href="portfolio.html">automobiles</a></li>
+            <li><a href="portfolio.html">real estates and property development</a></li>
+            <li><a href="portfolio.html">hygiene services</a></li>
+        </div>
+    </header>
+
+    <div class="locations">
+        <div>
+            <span>location</span>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div>
+            <span>email</span>
+            <p>Lorem@gmail.com</p>
+        </div>
+        <div>
+            <span>phone</span>
+            <p>09095288198</p>
+        </div>
+        <div>
+            <span>linkedin</span>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+
+    <!-- <div class="icons">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <i class="fa-sharp fa-solid fa-phone"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div> -->
+
+
+    <form name="fill" action="" onsubmit="return pass()">
+        <label for="text"></label>
+        <input type="text" name="text" placeholder="Enter your name">
+        <span class="demo"></span>
+        <label for="email"></label>
+        <input type="email" name="email" id="" placeholder="Enter your Email">
+        <span class="demo1"></span>
+        <textarea name="word" id="" cols="30" rows="10"></textarea>
+        <input type="submit" name="submit" id="" value="submit">
+    </form>
+
+    <footer>
+        <div class="footer-text">
+            <h5>about us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, voluptas unde minima adipisci, nihil, blanditiis voluptate nostrum dolorum ab officia placeat enim exercitationem. Commodi maiores nostrum autem voluptatibus officiis obcaecati!</p>
+        </div>
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portfolio.html">portfolios</a></li>
+                    <li><a href="contact.html">conntact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-form">
+            <form>
+                <p>send us a message</p>
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Enter your Email"  required>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" name="" id="">
+            </form>
+        </div>
+    </footer>
+    <p class="copyright">&copy; afrimond empire <span id="date"></span></p>
+</body>
+
+<script>
+    function big(p){
+       document.getElementById('show').style.display = "block";
+   }
+   function small(p){
+       document.getElementById('show').style.display = "none";
+   }
+   var d = new Date().getFullYear();
+   document.getElementById('date').innerHTML = d;
+
+
+   function pass(){
+    var first = document.fill.text.value;
+    var sec = document.fill.email.value;
+
+    if(first == null || first == ""){
+        document.querySelector(".demo").innerHTML = "Please fill this field";
+        return false;
+    }else if(first.length<5){
+        document.querySelector(".demo").innerHTML = "Characters must be more than five";
+        return false;
+    }
+    if(sec == null || sec ==""){
+        document.querySelector(".demo1").innerHTML = "Please fill this field";
+        return false;
+    }
+   }
+
+
+
+    var x = document.getElementById("bar");
+    var y = document.getElementById("menu-bar");
+    var z = document.getElementById("dismiss");
+
+    x.onclick = function(){
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "block";
+    }
+    z.onclick = function(){
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "none";
+    }
+
+</script>
+</html>

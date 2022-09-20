@@ -1,0 +1,681 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* .main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+    background:#fff;
+    position:relative;
+    padding:10px;
+}
+.main-1{
+    width:50%;
+    margin-left:30px;
+}
+.main-1 img{
+    width:8%;
+    border-radius:50%;
+}
+nav{
+    width:40%;
+    position: relative;
+    margin-right:30px;
+}
+nav .list{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+    transition:all 2s ease-in-out;
+    padding:10px;
+}
+.list-1{
+    position:absolute;
+    display:none;
+    background:black;
+    padding:10px;
+    width:250px;
+    margin:0 auto;
+    text-align:center;
+}
+nav ul li a:hover{
+    background:rgb(255,0,0);
+}
+nav ul li:hover>ul{
+    display:block;
+
+}
+.list-1 li a{
+    display:block;
+    margin:10px auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:0.8em;
+    color:#fff;
+
+} */
+
+.main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+    background:red;
+    padding:10px;
+    
+}
+.main-1 img{
+    width:8%;
+    border-radius:50px;
+}
+.navigation{
+    width:30%; 
+}
+.navigation ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+}
+.navigation ul li{
+    list-style:none;
+}
+.navigation ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+    transition:all 2s ease-in-out;
+    padding:10px;
+}
+.navigation ul li a:hover{
+    padding:10px;
+    background:red;
+    color:#fff;
+}
+.inner{
+    display:none;
+    margin:0 auto;
+    flex-wrap:wrap;
+    /* background:black; */
+    padding:20px;
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    /* min-height:100vh; */
+    background:rgba(0,0,0,.5);
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 10;
+    }
+} 
+.inner li{
+    list-style:none;
+}
+.inner li a{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:0.9em;
+    padding:10px;
+    margin:20px auto;
+    /* display:flex;
+    align-items:center;
+    justify-content:space-between; */
+}
+.background{
+    background-image:url(images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:overlay;
+    background-color:rgba(210,0,0,.4);
+}
+
+.head-word{
+    padding-top:150px;
+    padding-bottom:150px;
+    margin:0 auto;
+    text-align:center;
+}
+.head-word h1{
+    color:#fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:5em;
+    font-weight:bolder;
+    text-transform:capitalize;
+    color:black;
+}
+.head-word ul{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+    width:28%;
+    margin:10px auto;
+}
+.head-word ul li{
+    list-style:none;
+    text-transform:capitalize;
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:0.9em;
+    color:black;
+}
+.head-word a{
+    display:block;
+    text-decoration:none;
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.1em;
+    margin:30px auto 0;
+    color:#fff;
+    padding:10px;
+    background:red;
+    width:12%;
+    transition:all 1s;
+}
+.head-word a:hover{
+    background:#fff;
+    color:black;
+}
+.about{
+    margin:20px auto 0;
+    background:#fff;
+    width:100%;
+}
+.about-1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:98%;
+    justify-content:space-between;
+    /* background:red; */
+    flex-direction:row-reverse;
+    margin:0 auto;
+}
+.about-1 img{
+    width:50%;
+}
+.about-1 p{
+    width:45%;
+    margin:0 auto;
+    line-height:1.4em;
+    font-size:1em;
+    text-align:justify;
+}
+.about a{
+    display:block;
+    text-align:center;
+    width:15%;
+    background:red;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:0.9em;
+    margin:2px auto 0;
+    padding:12px;
+    color:#fff;
+    text-transform:capitalize;
+    transition:all 1s;
+}
+.about a:hover{
+    background:#fff;
+    color:black;
+}
+.portfolio{
+    margin:20px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:98%;
+    justify-content:space-between;
+    /* background:blue; */
+}
+/* .portfolio div{
+    width:30%
+} */
+.portfolio-1{
+    background:url(images/technology.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.portfolio-2{
+    background:url(images/farm\ and\ agriculture.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.portfolio-3{
+    background:url(images/food\ and\ drinks.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.portfolio p{
+    margin:150px auto;
+}
+.container{
+    position: relative;
+    width:95%;
+}
+.image {
+    display: block;
+    width:95%;
+    height:50vh;
+    /* height: auto; */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0,0,0,.5);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform:capitalize;
+    text-decoration:none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .porfolio-head{
+    text-align:center;
+    text-transform:uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.5em;
+    margin:30px auto 0;
+  }
+  .learn{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+    background:red;
+    color:#fff;
+    padding:10px;
+    margin:20px auto 0;
+    width:10%;
+    text-align:center;
+    transition:all 2s;
+}
+.learn:hover{
+    background:#fff;
+    color:black;
+}
+.fun-facts{
+    background:url(images/A7R09504_2019_A7Rii_Hiring_Psychologist_27062019_GI_Banner_GI_SS.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    margin:10px auto;
+    background-blend-mode:overlay;
+    background-color:rgba(0,0,0,.5);
+}
+.facts{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:98%;
+    margin:0 auto;
+    /* background:red; */
+}
+.facts div{
+    width:30%;
+    margin:100px auto;
+}
+.facts-word p{
+    text-transform:capitalize;
+    color:#fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+}
+.facts-word h5{
+    text-transform:capitalize;
+    font-size:2.5em;
+    text-transform:capitalize;
+    color:#fff;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    margin:10px auto;
+}
+.fact-text h6{
+    color:#fff;
+    font-size:2.5em;
+    font-weight:bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* text-align:center; */
+}
+.fact-text hr{
+    margin-top:10px;
+    width:70%;
+    border:1px solid #fff;
+}
+.fact-text p{
+    color:#fff;
+    margin:20px auto 0;
+    text-transform:capitalize;
+    font-size:1em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.teams{
+    background:rgb(136, 136, 136);
+    /* background:red; */
+    width:98%;
+    margin:20px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+   
+}
+.team-1{
+    width:29%; 
+    background:#fff;
+    padding:20px;
+    text-align:center;
+    margin:90px auto;
+    border-radius:10px;
+    box-shadow: 5px 2px #fff;
+    transition:all 2s;
+}
+.team-1:hover{
+    transform:scaleY(1.1);
+}
+.team-1 img{
+    width:30%;
+    border-radius:50px;
+    max-height:100px;
+    border:2px solid purple;
+    margin:10px auto 0;
+}
+.team-1 p{
+    text-transform:capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.5em;
+    color:black;
+}
+.team-1 span{
+    display:block;
+    margin:10px auto 0;
+    text-transform:capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+    color:purple;
+}
+.logo{
+    margin:20px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:35%;
+}
+.logo a{
+    display:block;
+    width:100%;
+}
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:98%;
+    margin:10px auto 0;
+    /* background:rgba(136, 136, 136 , .9); */
+    background:purple;
+}
+footer div{
+    width:33%;
+    /* background:green; */
+    margin:0 auto;
+}
+.footer-text h5 , .footer-form form p{
+    text-align:center;
+    text-transform:capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.3em;
+    color:#fff;
+}
+.footer-text p{
+    margin:10px auto;
+    line-height:1.5em;
+    margin-left:20px;
+    color:#fff;
+    text-align:justify;
+}
+.footer-nav nav ul li{
+    list-style:none;
+}
+.footer-nav nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    text-transform:capitalize;
+    color:#fff;
+    padding:10px;
+    transition:all 1s;
+    width:25%;
+    margin:0 auto;
+}
+.footer-nav nav ul li a:hover{
+    background:black;
+    color:#fff;
+}
+.footer form form p{
+    text-align:center;
+    text-transform:capitalize;   
+}
+.footer-form form{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:10px auto;
+    flex-direction:column;
+}
+.footer-form form input{
+    width:80%;
+    padding:10px;
+    margin:20px auto;
+    border:none;
+}
+.footer-form form textarea{
+    width:80%;
+    border:none;
+}
+.footer-form form input[type="submit"]{
+    width:20%;
+    cursor: pointer;
+    /* background:none; */
+}
+.copyright{
+    text-align:center;
+    text-transform:capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:0.8em;
+}
+#bar , #dismiss{
+    display:none;
+}
+@media screen and (max-width:750px){
+    .inner{
+        display:none;
+    }
+    #bar{
+        display:block;
+        border-radius:0;
+    }
+    #dismiss{
+        width:10%;
+        margin:20px 0 0;
+    }
+    .main-1{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:100%;
+        margin:20px auto;
+    }
+    .main-1 img{
+        width:10%;
+    }
+    .navigation{
+        display:none;
+        height:100vh;
+        width:80%;
+        position:absolute;
+        top:0;
+        right:0;
+        background:purple;
+        /* text-align:center; */
+        
+    }
+    .navigation ul{
+        flex-direction:column;
+    }
+    .navigation ul li a{
+        display:block;
+        padding:20px;
+        margin:20px auto 0;
+        color:#fff;
+        transition:all 2s;
+    }
+    .navigation ul li a:hover{
+        padding:20px;
+    }
+    .head-word{
+        padding-top:75px;
+        padding-bottom:75px;
+    }
+    .head-word h1{
+        font-size:3em;
+        font-weight:bold;
+    }
+    .head-word ul{
+        flex-direction:column;
+        width:100%;
+        margin:0 auto;
+    }
+    .head-word ul li{
+        margin:10px auto 0;
+    }
+    .head-word a{
+        width:30%;
+    }
+    .about-1{
+        flex-direction:column-reverse;
+    }
+    .about-1 img{
+        width:100%;
+    }
+    .about-1 p{
+        width:90%;
+        margin:10px auto;
+        text-align: justify;
+    }
+    .about a{
+        width:30%;
+        margin:10px auto 0;
+    }
+    .portfolio{
+        flex-direction:column;
+    }
+    .learn{
+        width:30%;
+    }
+    .facts{
+        flex-direction:column;
+    }
+    .facts div{
+        width:100%;
+        margin:20px auto;
+        text-align:center;
+    }
+    .facts-word h5{
+        font-size:1.5em;
+        width:100%;
+        margin:20px auto 0;
+    }
+    .fact-text hr{
+        width:40%;
+        margin:10px auto 0;
+    }
+    .teams{
+        flex-direction:column;
+    }
+    .team-1{
+        width:80%;
+        margin:20px auto;
+    }
+    .team-1 img{
+        width:35%;
+    }
+    footer{
+        flex-direction:column;
+    }
+    footer div{
+        width:100%;
+        margin:20px auto 0;
+    }
+    .footer-text p{
+        width:90%;
+        text-align:justify;
+    }
+    .footer-nav ul{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:60%;
+    }
+    .footer-nav ul li a{
+        display:block;
+        text-align:start;
+        width:100%;
+        /* display:none; */
+    }
+}
